@@ -1,0 +1,190 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Arial', sans-serif; */
+    background-color: #1A1A1A; /* Secondary color */
+    font-family: 'Roboto';
+}
+
+header {
+    background-color: #222222; /* Primary color */
+    color: #EFE1D1; /* Secondary color */
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.nav-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #32CD32; /* Secondary color */
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #EFE1D1; /* Secondary color */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #606060;
+}
+
+.resume .resume-btn {
+    padding: 0.5rem 1rem;
+    color: #1A1A1A ; /* Primary color */
+    background-color: #32CD32; /* Secondary color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.resume .resume-btn:hover {
+    color: #1A1A1A; /* Text color on hover */
+    box-shadow: 0 0 2px 0.7px #259a25; 
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+#hero {
+    background-color: #1A1A1A; /* Secondary color */
+    /* padding: 100px 0; */
+}
+
+.container {
+    width: 60%; /* Narrower width, down from 80% */
+    max-width: 1000px; /* You can set a max-width to prevent it from being too wide on larger screens */
+    margin: 0 auto;
+    display: flex; /* This will allow us to align items vertically center */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    height: 90vh; /* Full viewport height */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Reduced gap */
+}
+
+.hero-image img {
+    border-radius: 50%; /* Make the image round */
+    width: 300px; /* Set a fixed width for the image */
+    height: 300px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the aspect ratio is maintained */
+}
+
+.intro-bio {
+    color: #eae0e0; /* Primary color */
+    max-width: 600px;
+}
+
+.intro-bio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.intro-bio #hi{
+    color: #32CD32;
+}
+.intro-bio p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    font-size: 1rem; /* Set icon size */
+    color: #606060; /* Primary color */
+    
+}
+
+.social-icons a {
+    margin-right: 30px; 
+    color: inherit; /* Use the current text color */
+    text-decoration: none;
+
+}
+.social-icons i {
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #ffffff; /* Color change on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Action Buttons Styles */
+.action-buttons {
+    margin-top: 20px; /* Add space above the buttons */
+}
+
+#hire-me {
+    padding: 10px 20px;
+    color: #1A1A1A ; /* Primary color */
+    background-color: #32CD32; /* Secondary color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#hire-me:hover {
+    color: #1A1A1A; /* Text color on hover */
+    box-shadow: 0 0 2px 0.4px #259a25; 
+    font-weight: bold;
+}
+
+#see-my-work {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    color: #32CD32;
+    border: 2px solid #32CD32; /* Add a border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Transition for the glow effect */
+}
+
+#see-my-work:hover {
+    color: #32CD32; /* Text color on hover */
+    box-shadow: 0 0 2px 0.5px #32CD32; /* Slight glow effect on hover */
+}
+
+
+

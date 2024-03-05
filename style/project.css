@@ -1,0 +1,87 @@
+/* Project Cards Section */
+#projects {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #262626;
+    color: #ffffff; /* Text color */
+    /* margin: 0 0; */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 960px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.project-content {
+    padding: 1rem;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 1.5rem; /* Increase font size for boldness */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 0.5rem; /* Space between title and description */
+}
+
+.project-description {
+    font-size: 0.9rem; /* Decrease font size */
+    color: #A9A9A9; /* Darker font color */
+    margin-bottom: 1rem; /* Space between description and links */
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem; /* Space between the links */
+}
+
+.project-link {
+    text-decoration: none;
+    color: #32CD32; /* Primary color */
+    font-weight: 500; /* Make links bold */
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #ffffff;
+}
+
+.project-image {
+    flex: 1; /* Assign flex grow to image container */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    overflow: hidden; /* Hide overflow to prevent breaking the layout */
+    background: #262626; /* Background color if the image doesn't cover the whole area */
+}
+
+.project-image img {
+    width: auto; /* Adjust width automatically */
+    max-width: 100%; /* Ensure the image is not wider than its container */
+    max-height: 200px; /* Maximum height for the images */
+    object-fit: contain; /* Image is scaled to maintain its aspect ratio without cropping */
+    border: none; /* Remove border if any */
+    margin: auto; /* Center the image within the project-image div */
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 2rem 0;
+}
+
+
