@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -14,18 +15,18 @@
         <nav id="navbar">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="#">gns.ai</a>
+                    <a href="index.html">&lt; gns.ai &gt;</a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About Me</a></li>
                         <li><a href="project.html">Projects</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="resume">
-                    <a href="#" class="resume-btn">Download Resume</a>
+                    <a href="https://1drv.ms/b/s!AnqvAUzOLUdyidsSSqDEVU4-_VlD2w?e=ipPuIu" target="_blank" class="resume-btn">Download Resume</a>
                 </div>
             </div>
         </nav>
@@ -36,15 +37,14 @@
             <div class="hero-content">
                 <div class="hero-image">
                     
-                    <img src="/static/profile.jpg" alt="Your Name">
+                    <img src="static/profile.jpg" alt="Your Name">
                 </div>
                 <div class="intro-bio">
-                    <h2><span id="hi">Hi</span> There!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quisquam distinctio sed, nam eum vitae ad dicta voluptatem officia nemo at porro dignissimos ut fuga optio iusto sit. Consequatur, delectus?</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quisquam distinctio sed, nam eum vitae ad dicta voluptatem officia nemo at porro dignissimos ut fuga optio iusto sit. Consequatur, delectus?</p>
+                    <h2><span id="hi">Hey</span> There!</h2><br>
+                    <p>I'm <span id="name">Ganesh Epili</span>, an AI research engineer on a mission to revolutionize Natural Language Processing (NLP). My playground? The realm of generative AI for text, where I specialize in crafting innovative solutions like Large Language Models (LLM). I'm all about blending creativity with technical prowess to push the boundaries of what's possible in text generation. Join me as I dive deep into the fascinating world of NLP and shape the future of AI-driven communication.</p>
                                        
                     <div class="action-buttons">
-                        <button id="hire-me">Hire Me</button>
+                        <button id="hire-me">Know more about me → </button>
                         <button id="see-my-work">See My Work</button>
                     </div>
                     <!-- Add more paragraphs as needed -->
@@ -58,6 +58,13 @@
             </div>
         </div>
     </section>
-
+    <script>
+        document.getElementById("see-my-work").addEventListener("click", function() {
+            window.location.href = "project.html";
+        });
+        document.getElementById("hire-me").addEventListener("click", function() {
+            window.location.href = "about.html";
+        });
+        </script>
 </body>
 </html>

@@ -11,6 +11,10 @@ body {
     font-family: 'Roboto';
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 header {
     background-color: #222222; /* Primary color */
     color: #EFE1D1; /* Secondary color */
@@ -30,8 +34,9 @@ header {
     color: #32CD32; /* Secondary color */
     font-size: 1.5rem;
     text-decoration: none;
-    font-weight: bold;
-    font-family: 'Roboto';
+    font-family: "Khand";
+    font-weight: 600;
+    font-style: normal;
 }
 
 .menu ul {
@@ -136,6 +141,13 @@ header {
     color: #ffffff; /* Color change on hover */
 }
 
+.section-heading {
+    text-align: center;
+    color: #ffffff; /* Or any color you prefer */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .hero-content {
@@ -186,5 +198,7 @@ header {
     box-shadow: 0 0 2px 0.5px #32CD32; /* Slight glow effect on hover */
 }
 
-
-
+#name {
+    color: #32CD32;
+    font-weight: bold;
+}

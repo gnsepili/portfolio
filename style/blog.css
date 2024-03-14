@@ -1,0 +1,77 @@
+body {
+    background-color: #1A1A1A; /* Secondary color */
+    font-family: 'Roboto';
+    /*   */
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 40%; /* Adjust this to your preferred width */
+    margin: 1rem auto 1rem auto; 
+}
+
+.search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.search-box i {
+    color: white;
+    font-size: 20px;
+}
+
+#blogs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0  1rem; */
+}
+
+.blog-card {
+    background-color: #1A1A1D; /* As per your color scheme */
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-date {
+    min-width: 100px;
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #3e3e3e; /* Your primary color */
+}
+
+.blog-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+.blog-description {
+    font-size: 0.9rem;
+    color: #A9A9A9; /* Darker font color */
+}
+
+.blog-read-more {
+    text-decoration: none;
+    color: #32CD32; /* Your primary color */
+    margin-top: 0.5rem;
+}
+
+.blog-read-more:hover {
+    text-decoration: underline;
+}

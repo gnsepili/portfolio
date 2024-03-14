@@ -1,4 +1,15 @@
-/* Project Cards Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Arial', sans-serif; */
+    background-color: #1A1A1A; /* Secondary color */
+    font-family: 'Roboto';
+    /* overflow: hidden; */
+}
 #projects {
     padding: 2rem;
     display: flex;
@@ -17,7 +28,7 @@
     width: 80%;
     max-width: 960px;
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 }
@@ -63,7 +74,7 @@
     display: flex;
     align-items: center; /* Center the image vertically */
     justify-content: center; /* Center the image horizontally */
-    overflow: hidden; /* Hide overflow to prevent breaking the layout */
+    /* overflow: hidden; Hide overflow to prevent breaking the layout */
     background: #262626; /* Background color if the image doesn't cover the whole area */
 }
 
@@ -82,6 +93,22 @@
     align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
     padding: 2rem 0;
+    /* max-height: calc(100vh - 4rem);
+    overflow-y: scroll; */
 }
 
 
+.project-tags {
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #32CD32; /* Example tag background color */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: #fff;
+    margin: 2px 5px 2px 0; /* Added bottom margin for the gap */
+    white-space: nowrap; /* Prevent tags from breaking into multiple lines */
+}

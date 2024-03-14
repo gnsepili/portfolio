@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 
@@ -14,23 +15,37 @@
         <nav id="navbar">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="#">gns.ai</a>
+                    <a href="index.html">gns.ai</a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About Me</a></li>
                         <li><a href="project.html">Projects</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="resume">
-                    <a href="#" class="resume-btn">Download Resume</a>
+                    <a href="https://1drv.ms/b/s!AnqvAUzOLUdyidsSSqDEVU4-_VlD2w?e=ipPuIu" target="_blank" class="resume-btn">Download Resume</a>
                 </div>
             </div>
         </nav>
     </header>
+    <h1 class="section-heading">Blog Articles</h1>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search articles" onkeyup="searchArticles()">
+        <i class="fa fa-search"></i>
+    </div>
     
+
+    <section id="blogs">
+        <div id="blogs-container">
+            <!-- Blog cards will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <script src="static/blogs-data.js"></script>
+    <script src="script/blogs.js"></script>
 
 </body>
 </html>
