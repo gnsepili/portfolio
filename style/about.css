@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1A1A1A;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 50px; /* Adjust if necessary to provide space below the navbar */
+  margin-bottom: 50px; /* Add bottom margin to prevent content from being cut off */
+  position: relative; /* Establish a stacking context */
+  z-index: 1; /* Ensure the container is above the background but below the navbar */
+}
+
+.title {
+    color: #32CD32;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.section-content {
+    border-top: 1px solid #32CD32;
+    padding-top: 20px;
+}
+
+h2, h3, .date {
+    margin-left: 150px; /* Adjust the value as needed for proper alignment */
+    margin-right: 150px;
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+h3 {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.date {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.bullet {
+    font-size: 0.9em;
+    margin-bottom: 40px;
+    color: rgb(208, 208, 208);
+    margin-left: 165px;
+    margin-right: 165px;
+    /* font-style: italic; */
+}
+
+@media (max-width: 768px) {
+    h2, h3, .date, p {
+        margin-left: 50px;
+    }
+    .container {
+        width: 95%;
+        margin-top: 30px;
+    }
+}
+
+.component {
+    transition: transform 0.3s ease; /* for smooth animation */
+}
+
+/* Add a hover effect to scale the component */
+.component:hover {
+    transform: scale(1.03);
+}
+
+
+/* Skills section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+.skill-item img {
+  max-width: 60px;
+  max-height: 60px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+
+.skill-item span {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  
+}

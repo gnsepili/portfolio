@@ -2,7 +2,7 @@ projects={
     project1:{
         title:"ChatPdf: chat with your pdfs",
         description:"chatpdf allowes to chat with your pdf documents. Built with langchain, Mistral LLM, and Chroma Vector DB. It have the capability to chat with your pdfs, and also to search for specific content in the pdfs. It also have the capability to chat with multiple pdfs. It is a web application, and it is built with strimlit, and it is deployed in Netlify",
-        image:"https://apphut.io/wp-content/uploads/chatpdf-logo.png",
+        image:"static/chat-docs-logo.png",
         link:"https://www.github.com/gnsepili/llm-thesis",
         tags:["Python", "Strimlit", "Langchain", "Mistral LLM", "Chroma Vector DB", "Netlify"]
     },
