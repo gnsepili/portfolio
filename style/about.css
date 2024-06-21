@@ -1,111 +1,129 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-body {
-  background-color: #1A1A1A;
-  font-family: 'Roboto';
-  color: #ffffff;
+.hover-effect {
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.container {
-  width: 80%;
-  max-width: 1200px;
-  margin-top: 50px; /* Adjust if necessary to provide space below the navbar */
-  margin-bottom: 50px; /* Add bottom margin to prevent content from being cut off */
-  position: relative; /* Establish a stacking context */
-  z-index: 1; /* Ensure the container is above the background but below the navbar */
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 .title {
-    color: #32CD32;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    color: #4a90e2;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
 }
-.section-content {
-    border-top: 1px solid #32CD32;
-    padding-top: 20px;
+.title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #4a90e2;
+    bottom: -5px;
+    left: 0;
 }
-
-h2, h3, .date {
-    margin-left: 150px; /* Adjust the value as needed for proper alignment */
-    margin-right: 150px;
+.job-title {
+    font-weight: bold;
+    color: #4a90e2;
 }
-h2 {
-    font-size: 1.2em;
-    font-weight: 400;
-    margin-bottom: 3px;
+.company, .institution {
+    font-style: italic;
+    color: #999;
+}
+.right-align {
+    text-align: right;
 }
 h3 {
-    font-size: 0.8em;
-    font-weight: 300;
+    color: #ffffff;
 }
-.date {
-    font-size: 0.8em;
-    font-style: italic;
-    color: #707070;
-    margin-bottom: 10px;
-}
-.bullet {
-    font-size: 0.9em;
-    margin-bottom: 40px;
-    color: rgb(208, 208, 208);
-    margin-left: 165px;
-    margin-right: 165px;
-    /* font-style: italic; */
-}
-
 @media (max-width: 768px) {
-    h2, h3, .date, p {
-        margin-left: 50px;
+    .flex-row {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .container {
-        width: 95%;
-        margin-top: 30px;
+    .right-align {
+        text-align: left;
     }
 }
 
-.component {
-    transition: transform 0.3s ease; /* for smooth animation */
+.custom-skill-card {
+    padding: 0.5rem; /* Adjust padding as needed */
+    width: 100px; /* Set a fixed width for the skill cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Add a hover effect to scale the component */
-.component:hover {
-    transform: scale(1.03);
+.custom-skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Skills section */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  padding: 20px;
-}
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-}
-.skill-item img {
-  max-width: 60px;
-  max-height: 60px;
-  margin-bottom: 10px;
-  object-fit: contain;
+.custom-skill-card img {
+    width: 2rem; /* Adjust width as needed */
+    height: 2rem; /* Adjust height as needed */
 }
 
-
-.skill-item span {
-  font-size: 0.9em;
-  color: #ffffff;
+.custom-skill-card span {
+    margin-top: 0.25rem; /* Adjust margin as needed */
 }
 
-.skill-item:hover {
-  transform: translateY(-5px);
-  
+/* Recommendation Section */
+.recommendations-section {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.recommendation-card {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-card .recommended {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items to the right */
+}
+
+.recommendation-card .recommended img {
+    margin-left: 0.5rem;
+}
+
+/* Carousel buttons */
+#prevBtn, #nextBtn {
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    opacity: 1;
+}
+
+#recommendations-container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
 }

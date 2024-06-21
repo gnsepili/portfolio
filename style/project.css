@@ -1,114 +1,105 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* font-family: 'Arial', sans-serif; */
-    background-color: #1A1A1A; /* Secondary color */
-    font-family: 'Roboto';
-    /* overflow: hidden; */
-}
-#projects {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-card {
-    background-color: #262626;
-    color: #ffffff; /* Text color */
-    /* margin: 0 0; */
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 960px;
-    border-radius: 8px;
-    /* overflow: hidden; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-.project-content {
-    padding: 1rem;
-    flex-basis: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.project-title {
-    font-size: 1.5rem; /* Increase font size for boldness */
-    font-weight: bold; /* Make it bold */
-    margin-bottom: 0.5rem; /* Space between title and description */
-}
-
-.project-description {
-    font-size: 0.9rem; /* Decrease font size */
-    color: #A9A9A9; /* Darker font color */
-    margin-bottom: 1rem; /* Space between description and links */
-}
-
-.project-links {
-    display: flex;
-    gap: 1rem; /* Space between the links */
-}
-
-.project-link {
+/* Button styles */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
     text-decoration: none;
-    color: #32CD32; /* Primary color */
-    font-weight: 500; /* Make links bold */
-    transition: color 0.3s ease;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
 }
 
-.project-link:hover {
-    color: #ffffff;
+.btn i {
+    margin-right: 0.5rem;
 }
 
-.project-image {
-    flex: 1; /* Assign flex grow to image container */
-    display: flex;
-    align-items: center; /* Center the image vertically */
-    justify-content: center; /* Center the image horizontally */
-    /* overflow: hidden; Hide overflow to prevent breaking the layout */
-    background: #262626; /* Background color if the image doesn't cover the whole area */
+/* GitHub themed button */
+.btn-github {
+    background-color: #24292F;
+    color: white;
+    border: none;
 }
 
-.project-image img {
-    width: auto; /* Adjust width automatically */
-    max-width: 100%; /* Ensure the image is not wider than its container */
-    max-height: 200px; /* Maximum height for the images */
-    object-fit: contain; /* Image is scaled to maintain its aspect ratio without cropping */
-    border: none; /* Remove border if any */
-    margin: auto; /* Center the image within the project-image div */
+.btn-github:hover {
+    background-color: #24292F90;
 }
 
-#projects-container {
-    display: flex;
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    padding: 2rem 0;
-    /* max-height: calc(100vh - 4rem);
-    overflow-y: scroll; */
+/* Demo button color */
+.btn-demo {
+    background-color: #2563EB;
+    color: white;
+    border: none;
 }
 
-
-.project-tags {
-    margin: 10px 0;
+.btn-demo:hover {
+    background-color: #1D4ED8;
 }
 
+/* Tag styles */
 .tag {
+    background-color: #4A5568;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
     display: inline-block;
-    background-color: #32CD32; /* Example tag background color */
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 0.8em;
-    color: #fff;
-    margin: 2px 5px 2px 0; /* Added bottom margin for the gap */
-    white-space: nowrap; /* Prevent tags from breaking into multiple lines */
+    cursor: default;
+}
+
+/* Other existing styles */
+.p-4 {
+    padding: 1rem;
+}
+
+.bg-gray-800 {
+    background-color: #2D3748;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.transform {
+    transform: scale(1);
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.02);
+}
+
+.img-fixed {
+    width: 100%;
+    height: auto;
+    max-height: 8rem;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    /* Mobile view styles */
+    .tag {
+        margin-bottom: 0.5rem;
+    }
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .space-y-2 > * + * {
+        margin-top: 0.5rem;
+    }
 }

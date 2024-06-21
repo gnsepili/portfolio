@@ -3,75 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganesh Epili - AI Engineer</title>
-    <link rel="icon" type="image/png" href="static/favicon.ico">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-2nO1lTxuPBV6L/oiRN6UjHqb+iQ3s34+QVpuIt2p0L2lADCHLr5QOdXaQAoX+9av" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <title>Ganesh Epili Portfolio</title>
+    <link rel="icon" href="static/images/logo.png" type="image/x-icon">
 
 </head>
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="/">&lt;gns.ai/&gt;</a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="project.html">Projects</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="resume">
-                    <a href="Resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-image">
-                    
-                    <img src="static/profile.jpg" alt="Your Name">
-                </div>
-                <div class="intro-bio">
-                    <h3><span id="hi">Hey </span> There <span class="wave">👋</span>!!</h3><br>
-                    <p>I'm <span id="name">Ganesh Epili</span>, an AI Engineer with a specialization on Natural Language Processing (NLP). I'm currently completing my Master's Degree in Machine Learning at <span id="heighlight">DAIICT</span>, where I'm delving into the fascinating world of NLP, from classical text processing to cutting-edge Generative AI like <span id="heighlight">Large Language Models</span>.<br><br> Alongside my studies, I also work as a <span id="heighlight">Research Scholar</span> at the IRLP Lab, DAIICT. With a background as an <span id="heighlight">ML Engineer</span> in a product-based startup, I bring a blend of practical experience and academic rigor to my work. <br><br> Beyond AI and software development, I'm passionate about teaching, badminton, fitness, photography, and exploring new places. <br>Dive into my portfolio to discover more about my journey in AI and beyond!</p>
-                                       
-                    <div class="action-buttons">
-                        <button id="hire-me">Know more about me → </button>
-                        <button id="see-my-work">See My Work</button>
-                    </div>
-                    <!-- Add more paragraphs as needed -->
-                    <div class="social-icons">
-                        <a href="https://github.com/gnsepili" target="_blank"><i class="fab fa-github"></i>Github</a>
-                        <a href="https://www.linkedin.com/in/gnsepili/" target="_blank"><i class="fab fa-linkedin-in"></i>Linkedin</a>
-                        <a href="mailto:ganeshepili1998@gmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
-                        <a href="https://instagram.com/gns.ai" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-                        <a href="https://medium.com/@ganeshepili" target="_blank"><i class='fas fa-blog'></i>Medium</a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        document.getElementById("see-my-work").addEventListener("click", function() {
-            window.location.href = "project.html";
-        });
-        document.getElementById("hire-me").addEventListener("click", function() {
-            window.location.href = "about.html";
-        });
-        </script>
+<body class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
+    
+<!-- Start NavBar -->
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ganesh</span>
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-blue-500">Epili</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <a href="/index.htmlResume.pdf" target="_blank" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Download Resume</a>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="/index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="/about.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+        </li>
+        <li>
+            <a href="/project.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
+        </li>
+        <li>
+          <a href="/blog.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogs</a>
+        </li>
+        <li>
+          <a href="/contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+<!-- End NavBar --> 
+
+<!-- Start Hero Section -->
+<section class="flex-grow flex items-center pt-16 md:pt-24">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="flex justify-center lg:mt-0 lg:col-span-5 lg:flex">
+            <img class="hero-image rounded-full transform scale-x-[-1]" src="static/images/profile.png" alt="profile">
+        </div>          
+        
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-white">Hey There! <span class="animate-waving-hand">👋</span> <br>I'm a <span class="typing" id="role"></span></h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Hi, My name is Ganesh Epili, an AI Engineer with a specialization in Natural Language Processing (NLP). I'm currently completing my Master's Degree in Machine Learning at DAIICT, where I'm delving into the fascinating world of NLP, from classical text processing to cutting-edge Generative AI like Large Language Models.</p>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Get started
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                <i class="fab fa-github mr-2"></i> See my work
+            </a> 
+        </div>                
+    </div>
+</section>
+<!-- End Hero Section -->
+
+<!-- Start Footer -->
+<footer class="bg-white dark:bg-gray-900 p-4 mt-auto">
+    <div class="flex flex-col space-y-4 items-center md:space-y-0 md:flex-row md:space-x-6 md:justify-center">
+        <a href="https://github.com/gnsepili" target="_blank" class="social-icon flex items-center gap-2 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+            <i class="fab fa-github"></i>
+            <span>Github</span>
+        </a>
+        <a href="https://linkedin.com/in/gnsepili" target="_blank" class="social-icon flex items-center gap-2 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="mailto:ganeshepili1998@gmail.com" target="_blank" class="social-icon flex items-center gap-2 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+        </a>
+        <a href="https://www.instagram.com/gns.ai/" target="_blank" class="social-icon flex items-center gap-2 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://ganeshepili.medium.com/" target="_blank" class="social-icon flex items-center gap-2 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+            <i class="fab fa-medium"></i>
+            <span>Medium</span>
+        </a>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<script src="scripts/animation.js"></script>
 </body>
 </html>

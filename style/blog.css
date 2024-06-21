@@ -1,77 +1,101 @@
-body {
-    background-color: #1A1A1A; /* Secondary color */
-    font-family: 'Roboto';
-    /*   */
-}
-.search-box {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    border-radius: 25px;
-    padding: 10px 20px;
-    width: 40%; /* Adjust this to your preferred width */
-    margin: 1rem auto 1rem auto; 
-}
-
-.search-box input {
+.tag-btn {
+    background-color: #4A5568;
+    color: white;
     border: none;
-    background: none;
-    outline: none;
-    color: white;
-    font-size: 16px;
-    flex: 1;
-    padding-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
 }
 
-.search-box i {
-    color: white;
-    font-size: 20px;
+.tag-btn:hover {
+    background-color: #2D3748;
 }
 
-#blogs-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding: 0  1rem; */
-}
-
-.blog-card {
-    background-color: #1A1A1D; /* As per your color scheme */
-    color: #ffffff;
-    margin: 0 0 1rem 0;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
+.p-4 {
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.blog-date {
-    min-width: 100px;
-    margin-right: 1rem;
-    font-weight: bold;
-    color: #3e3e3e; /* Your primary color */
+.bg-gray-800 {
+    background-color: #2D3748;
 }
 
-.blog-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    font-weight: bolder;
+.rounded-lg {
+    border-radius: 0.5rem;
 }
 
-.blog-description {
-    font-size: 0.9rem;
-    color: #A9A9A9; /* Darker font color */
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.blog-read-more {
-    text-decoration: none;
-    color: #32CD32; /* Your primary color */
-    margin-top: 0.5rem;
+.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.blog-read-more:hover {
-    text-decoration: underline;
+.transition {
+    transition: all 0.3s ease;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.transform {
+    transform: scale(1);
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.02);
+}
+
+.relative {
+    position: relative;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.md\:w-2\/3 {
+    width: 66.67%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.space-x-2 {
+    > * + * {
+        margin-left: 0.5rem;
+    }
+}
+
+.tag-indicator {
+    background-color: #4A5568;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.close-tag-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }

@@ -1,105 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganesh Epili - AI Engineer</title>
-    <link rel="icon" type="image/png" href="static/favicon.ico">
-    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <title>Ganesh Epili - About Me</title>
+    <link rel="icon" href="static/images/logo.png" type="image/x-icon">
 </head>
+<body class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
 
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="/">&lt;gns.ai/&gt;</a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="project.html">Projects</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="resume">
-                    <a href="Resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-   
-    <div class="container">
-            
-        <div class="title">WORK</div>
-        <div class="section-content">
-            <div class="component">
-                <h2>NLP Research Scholar</h2>
-                <h3>IRLP Lab, DAIICT, Gandhinagar, India</h3>
-                <div class="date">May 2022 - Present</div>
-                
-                    <ul class="bullet">
-                        <li>Conducted research on information retrieval systems and natural language processing (NLP), as well as generative AI models like LLMs specializing in the domain of software code, to enhance the understanding and processing of code-related queries and information.</li>
-                        <li>Served as a technical organizing member for the FIRE conference organized by IRLP Lab, contributing to the development of a platform for conference participants and managing the overall event operations.</li>
-                    </ul>
-                
-            </div>
-            
-            <div class="component">
-                <h2>Backend/ML Intern</h2>
-                <h3>Jungleworks, Chandigarh, India</h3>
-                <div class="date">July 2019 - August 2020</div>
-                    <ul class="bullet">
-                        <li>Created a platform for building custom chatbots on client's data. Uses fastify/ Nodejs for the Backend and RASA for the NLP server. </li>
-                        <li>Developed Interactive dashboards for e-commerce websites (clients) using the KATO (in-house) platform and optimized the codebase to reduce the graph loading time by 70%.</li>
-                    </ul>
-            </div>
+<!-- Start NavBar -->
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ganesh</span>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-blue-500">Epili</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <a href="/Resume.pdf" target="_blank" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Download Resume</a>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
         </div>
-
-        <div class="title">EDUCATION</div>
-        <div class="section-content">
-            <div class="component">
-                <h2>M.Tech in Machine Learning</h2>
-                <h3>Dhirubhai Ambani Institute of Information and Communication Technology</h3>
-                <div class="date">August 2022 - Present</div>
-                    <ul class="bullet">
-                        <li>Specialized in Machine Learning (ML) and enrolled in fundamental and advanced ML and Deep Learning (DL) courses.
-                        </li>
-                        <li>Engaged in applied research at IRLP Lab, contributing to real-world projects that bridge theoretical concepts with practical
-                            applications.</li>
-                    </ul>
-            </div>
-            
-            <div class="component">
-                <h2>B.Tech in Computer Science</h2>
-                <h3>Lovely Professional University, Phagwada, India</h3>
-                <div class="date">July 2016 - July 2020</div>
-                
-                    <ul class="bullet">
-                        <li>Explored fundamentals of computer science and applied mathematics and gained substantial exposure to software
-                            development.</li>
-                    </ul>
-                
-            </div> 
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="/index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">About</a>
+                </li>
+                <li>
+                    <a href="/project.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
+                </li>
+                <li>
+                    <a href="/blog.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogs</a>
+                </li>
+                <li>
+                    <a href="/contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="title">Technologies and Tools</div>
-        <div class="section-content" id="skills-section">
-            <!-- Skills will be inserted here by JavaScript -->
-        </div>
-
     </div>
-<script src="script/skills.js"></script>
-</body>
+</nav>
+<!-- End NavBar --> 
 
+<!-- About Me Section -->
+<main class="flex-grow container mx-auto mt-24 p-6">
+    <section class="p-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <img class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-8" src="static/images/profile.jpg" alt="Ganesh Epili">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Ganesh Epili</h1>
+                <p class="text-gray-700 dark:text-gray-300">🎓 Master's Student | Data Scientist</p>
+                <p class="text-gray-700 dark:text-gray-300">📍Bengaluru, India</p>
+                <p class="text-gray-700 dark:text-gray-300">📧 Email: <a href="mailto:ganeshepili1998@gmail.com" class="text-blue-500">ganeshepili1998@gmail.com</a></p>
+                <p class="text-gray-700 dark:text-gray-300">📞 Phone: <a href="tel:8984445951" class="text-blue-500">8984445951</a></p>
+            </div>
+        </div>
+        <div class="mt-8">
+            <h2 class="title text-2xl font-bold">About Me</h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4" style="font-weight: 300; font-size: 1.25rem;">Hello! I'm Ganesh Epili, a passionate data scientist and master's student specializing in natural language processing and machine learning. I love creating innovative solutions that bridge theoretical concepts with practical applications.</p>
+        </div>
+    </section>
+    <section class="glass-card">
+        <h2 class="title text-2xl font-bold">Work Experience</h2>
+        <div class="hover-effect mb-4 p-4 flex flex-col">
+            <div class="flex flex-col md:flex-row md:justify-between items-start mb-4">
+                <div class="flex items-center">
+                    <img class="w-8 h-8 mr-4" src="static/images/irlp.jpeg" alt="IRLP Lab">
+                    <div>
+                        <h3 class="text-xl font-semibold" style="color: #ffffff;">NLP Researcher</h3>
+                        <p class="company">IRLP Lab, DAIICT</p>
+                    </div>
+                </div>
+                <p class="right-align text-gray-700 dark:text-gray-300">May 2022 - Present</p>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">Conducted research on information retrieval systems and NLP, focusing on generative AI models like LLMs to enhance the understanding and processing of code-related queries. Contributed to the FIRE conference as a technical organizing member.</p>
+        </div>
+        <div class="hover-effect p-4 flex flex-col">
+            <div class="flex flex-col md:flex-row md:justify-between items-start mb-4">
+                <div class="flex items-center">
+                    <img class="w-8 h-8 mr-4" src="static/images/Jungleworks.png" alt="Jungleworks">
+                    <div>
+                        <h3 class="text-xl font-semibold" style="color: #ffffff;">Backend / ML Intern</h3>
+                        <p class="company">Jungleworks / Jugnoo</p>
+                    </div>
+                </div>
+                <p class="right-align text-gray-700 dark:text-gray-300">July 2019 - February 2020</p>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">Created a platform for building custom chatbots using fastify/Nodejs for the backend and RASA for the NLP server. Developed interactive dashboards for e-commerce websites and optimized the codebase to reduce graph loading time by 70%.</p>
+        </div>
+    </section>
+    
+    <section class="glass-card">
+        <h2 class="title text-2xl font-bold">Education</h2>
+        <div class="hover-effect mb-4 p-4 flex flex-col md:flex-row md:justify-between">
+            <div class="flex items-center">
+                <img class="w-8 h-8 mr-4" src="static/images/daiict.png" alt="DAIICT">
+                <div>
+                    <h3 class="text-xl font-semibold">M.Tech in Machine Learning</h3>
+                    <p class="institution">Dhirubhai Ambani Institute of Information and Communication Technology</p>
+                </div>
+            </div>
+            <p class="right-align text-gray-700 dark:text-gray-300">2022 - Present</p>
+        </div>
+        <div class="hover-effect p-4 flex flex-col md:flex-row md:justify-between">
+            <div class="flex items-center">
+                <img class="w-8 h-8 mr-4" src="static/images/lpu.png" alt="LPU">
+                <div>
+                    <h3 class="text-xl font-semibold">B.Tech in Computer Science</h3>
+                    <p class="institution">Lovely Professional University</p>
+                </div>
+            </div>
+            <p class="right-align text-gray-700 dark:text-gray-300">2016 - 2020</p>
+        </div>
+    </section>
+    <section class="glass-card">
+        <h2 class="title text-2xl font-bold">Courses & Certificates</h2>
+        <div class="hover-effect mb-4 p-4 flex flex-col md:flex-row md:justify-between">
+            <div>
+                <h3 class="text-xl font-semibold">Full-Stack Web Development</h3>
+                <p class="institution">Online Course</p>
+            </div>
+            <p class="right-align text-gray-700 dark:text-gray-300">2019</p>
+        </div>
+        <div class="hover-effect p-4 flex flex-col md:flex-row md:justify-between">
+            <div>
+                <h3 class="text-xl font-semibold">Data Science and Machine Learning</h3>
+                <p class="institution">Certification</p>
+            </div>
+            <p class="right-align text-gray-700 dark:text-gray-300">2020</p>
+        </div>
+    </section>
+    <section class="recommendations-section p-6 mt-16 font-sans dark:text-white">
+        <h2 class="title text-2xl font-bold">LinkedIn Recommendations</h2>
+        <div class="w-full max-w-screen-lg mx-auto">
+          <div id="carousel" class="relative">
+            <div id="recommendations-container" class="flex overflow-x-scroll space-x-6">
+              <!-- Recommendations will be populated here by JavaScript -->
+            </div>
+            <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">❮</button>
+            <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">❯</button>
+          </div>
+        </div>
+      </section>
+
+    <section class="glass-card mb-12">
+        <h2 class="title text-2xl font-bold">Skills</h2>
+        <div id="skills-container" class="grid gap-6">
+            <!-- Skills will be populated here by JavaScript -->
+        </div>
+    </section>
+</main>
+
+<script src="scripts/skill-fetch.js"></script>
+<script src="scripts/recommendation-fetch.js"></script>
+</body>
 </html>
