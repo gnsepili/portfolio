@@ -81,6 +81,6 @@ fetch('../static/data/li-recommendation.json')
     document.getElementById('nextBtn').addEventListener('click', slideNext);
     document.getElementById('prevBtn').addEventListener('click', slidePrev);
 
-    setInterval(slideNext, 3000); // Adjust the interval as needed
+    setInterval(slideNext, 2000); // 2 seconds interval
   })
   .catch(error => console.error('Error loading recommendations:', error));

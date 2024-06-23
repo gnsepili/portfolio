@@ -1,12 +1,12 @@
 [
     {
-        "title": "ChatPdf: chat with your pdfs",
+        "title": "Aditi pagal he",
         "description": "Chatpdf allows to chat with your pdf documents. Built with langchain, Mistral LLM, and Chroma Vector DB. It has the capability to chat with your pdfs, and also to search for specific content in the pdfs. It also has the capability to chat with multiple pdfs. It is a web application, and it is built with Streamlit, and it is deployed on Netlify.",
-        "image": "https://styles.redditmedia.com/t5_ao3srv/styles/communityIcon_w5g9iafmnwec1.png",
-        "tags": ["Python", "Streamlit", "Langchain", "Mistral LLM", "Chroma Vector DB", "Netlify"],
+        "image": "https://ph-files.imgix.net/d8734355-803b-473d-837f-649176a5172e.png?auto=format",
+        "tags": ["Python", "Streamlit", "Langchain", "Mistral LLM", "Chroma Vector DB", "nodejs"],
         "buttons": [
             {"text": "GitHub", "link": "https://www.github.com/gnsepili/llm-thesis", "icon": "fa-brands fa-github"},
-            {"text": "Demo", "link": "https://demo.com/chatpdf", "icon": "fa-desktop"}
+            {"text": "say hi", "link": "https://demo.com/chatpdf", "icon": "fa-solid fa-hand"}
         ]
     },
     {
