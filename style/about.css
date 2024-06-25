@@ -4,7 +4,7 @@
     -webkit-backdrop-filter: blur(100px);
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Increased margin-bottom */
 }
 .hover-effect {
     transition: transform 0.5s, box-shadow 0.5s;
@@ -81,13 +81,13 @@ h3 {
 }
 
 /* Recommendation Section */
-.recommendations-section {
+/* .recommendations-section {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-}
+} */
 
 .recommendation-card {
     padding: 1rem;

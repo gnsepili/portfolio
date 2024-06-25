@@ -4,7 +4,6 @@ document.querySelector('[data-collapse-toggle]').addEventListener('click', funct
     target.classList.toggle('hidden');
 });
 
-
 async function fetchProjects() {
     const response = await fetch('../static/data/projects.json');
     const projects = await response.json();
@@ -13,7 +12,7 @@ async function fetchProjects() {
 
 function createProjectElement(project) {
     const projectElement = document.createElement('div');
-    projectElement.classList.add('p-4', 'bg-gray-800', 'rounded-lg', 'shadow-md', 'hover:shadow-lg', 'transition', 'duration-300', 'transform', 'hover:scale-105', 'flex', 'items-start');
+    projectElement.classList.add('w-full', 'max-w-sm', 'bg-white', 'border', 'border-gray-200', 'rounded-lg', 'shadow', 'dark:bg-gray-800', 'dark:border-gray-700', 'p-4', 'flex', 'flex-col', 'items-start');
 
     const buttons = project.buttons.map(button => {
         let btnClass = "btn";
@@ -31,12 +30,12 @@ function createProjectElement(project) {
     const tags = project.tags.map(tag => `<span class="tag tag-btn" data-tag="${tag}">${tag}</span>`).join(' ');
 
     projectElement.innerHTML = `
-        <img src="${project.image}" alt="${project.title}" class="w-1/3 h-32 object-cover rounded-lg mr-4">
-        <div>
-            <h2 class="text-xl font-semibold text-white">${project.title}</h2>
-            <p class="text-gray-400 mt-2">${project.description}</p>
-            <div class="mt-2">${tags}</div>
-            <div class="mt-2">${buttons}</div>
+        <h2 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${project.title}</h2>
+        <p class="text-gray-700 dark:text-gray-400 mb-4">${project.description}</p>
+        <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover rounded-lg mb-4">
+        <div class="flex flex-wrap gap-2 mb-4">${tags}</div>
+        <div class="flex justify-between mt-auto w-full">
+            ${buttons}
         </div>
     `;
     return projectElement;

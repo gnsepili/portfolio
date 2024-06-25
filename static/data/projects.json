@@ -1,32 +1,72 @@
 [
     {
-        "title": "Aditi pagal he",
-        "description": "Chatpdf allows to chat with your pdf documents. Built with langchain, Mistral LLM, and Chroma Vector DB. It has the capability to chat with your pdfs, and also to search for specific content in the pdfs. It also has the capability to chat with multiple pdfs. It is a web application, and it is built with Streamlit, and it is deployed on Netlify.",
-        "image": "https://ph-files.imgix.net/d8734355-803b-473d-837f-649176a5172e.png?auto=format",
-        "tags": ["Python", "Streamlit", "Langchain", "Mistral LLM", "Chroma Vector DB", "nodejs"],
+        "title": "Financial Chatbot",
+        "description": "Developed a financial chatbot by fine-tuning the LLaMA 2 7B model specifically for the financial domain. The model provides tailored financial advice and insights.",
+        "image": "https://media.licdn.com/dms/image/D4E12AQEC-EEUaE2qxw/article-cover_image-shrink_720_1280/0/1700411587919?e=2147483647&t=QlA3Q0q9j5NFMfvWgmUzRKMUq0AVe1J-N32jHtpsQis&v=beta",
+        "tags": ["LLM", "Fine-tuning", "Financial", "LLaMA2"],
         "buttons": [
-            {"text": "GitHub", "link": "https://www.github.com/gnsepili/llm-thesis", "icon": "fa-brands fa-github"},
-            {"text": "say hi", "link": "https://demo.com/chatpdf", "icon": "fa-solid fa-hand"}
+            {"text": "GitHub", "link": "https://www.github.com/gnsepili/domain-specific-llm-finetuning", "icon": "fa-brands fa-github"},
+            {"text": "🤗 Huggingface", "link": "https://huggingface.co/gnsepili/FinancialChatbot"}
         ]
     },
     {
-        "title": "Language Model for Code-Related Work (LLM)",
-        "description": "Fine-tuned a very small LLM T5 (770M parameters only) on a GPT-generated dataset (CodeAlpaca) using Supervised Finetuning (SFT). Later, the SFT-tuned model is re-tuned using RLHF (Reinforcement learning from human feedback) using our own Human Preferences, resulting in 19.5 Pass@1 and 44.2 Pass@100 on the HumanEval benchmark.",
-        "image": "https://styles.redditmedia.com/t5_ao3srv/styles/communityIcon_w5g9iafmnwec1.png",
-        "tags": ["Python", "Pytorch", "Huggingface", "GPT", "T5", "RLHF"],
+        "title": "Legal Chatbot",
+        "description": "Created a legal chatbot by fine-tuning the DistilBERT model on an Indian Constitutional Law dataset. This chatbot offers legal assistance and information based on Indian constitutional law.",
+        "image": "static/images/IndiLegal.png",
+        "tags": ["LLM", "Fine-tuning", "Legal", "DistilBERT"],
         "buttons": [
             {"text": "GitHub", "link": "https://www.github.com/gnsepili/llm-thesis", "icon": "fa-brands fa-github"},
-            {"text": "Huggingface", "link": "https://demo.com/llm", "icon": "fa-desktop "}
+            {"text": "🤗 Huggingface", "link": "https://huggingface.co/gnsepili/LegalChatbot"}
         ]
     },
     {
-        "title": "text2sql: SQL Query Generator from Natural Language Queries",
-        "description": "Trained a Transformers (encoder-decoder) architecture-based model on the CoSQL dataset from scratch for converting Natural Language Queries to SQL queries.",
-        "image": "https://cdn-icons-png.flaticon.com/512/9544/9544010.png",
-        "tags": ["Python", "Pytorch", "Huggingface", "Transformers", "SQL"],
+        "title": "NaturalSQL",
+        "description": "Developed a model based on the Transformers architecture, trained from scratch on the WikiSQL dataset. This model converts natural language queries into SQL queries, enabling users to interact with SQL databases using natural language.",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/1*pVbnhRc2K2a1L4wXAdul6Q.png",
+        "tags": ["Transformers", "SQL", "Natural Language Processing"],
         "buttons": [
-            {"text": "GitHub", "link": "https://www.github.com/gnsepili/llm-thesis", "icon": "fa-brands fa-github"},
-            {"text": "Demo", "link": "https://demo.com/text2sql", "icon": "fa-desktop"}
+            {"text": "GitHub", "link": "https://github.com/gnsepili/NatureQL", "icon": "fa-brands fa-github"},
+            {"text": "🤗 Huggingface", "link": "https://huggingface.co/gnsepili/NaturalSQL"}
+        ]
+    },
+    {
+        "title": "Myntra Product Recommendation System",
+        "description": "Designed and implemented a personalized product recommendation system for Myntra. This system uses advanced recommendation algorithms to provide users with tailored product suggestions.",
+        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*uehm209YApJnx4JQUU1HMw.png",
+        "tags": ["Recommendation System", "Personalization", "Myntra"],
+        "buttons": [
+            {"text": "GitHub", "link": "https://www.github.com/gnsepili/myntra-product-recommendation", "icon": "fa-brands fa-github"},
+            {"text": "Demo", "link": "#", "icon": "fa-solid fa-play"}
+        ]
+    },
+    {
+        "title": "IntellectRAG: Enriched LLM Q&A with Document Insights",
+        "description": "Developed an advanced Retrieval-Augmented Generation (RAG) system utilizing the Mistral 7B model. This system enhances Q&A capabilities by integrating documents, webpages, and YouTube video transcripts for comprehensive information retrieval.",
+        "image": "https://gradientflow.com/wp-content/uploads/2023/10/newsletter87-RAG-simple.png",
+        "tags": ["LLM", "RAG", "Mistral7B", "Information Retrieval"],
+        "buttons": [
+            {"text": "GitHub", "link": "https://www.github.com/gnsepili/IntellectRAG", "icon": "fa-brands fa-github"},
+            {"text": "Demo", "link": "#", "icon": "fa-solid fa-play"}
+        ]
+    },
+    {
+        "title": "AI-Powered Job Matching System",
+        "description": "Created an AI-powered job matching system that allows users to upload their CVs and search for specific job titles. Based on the user's profile, the system provides the best job recommendations.",
+        "image": "https://www.researchgate.net/profile/Julius-Schoening/publication/373197137/figure/fig2/AS:11431281182563558@1692374001549/The-AI-application-pipeline-involves-six-steps-steps-where-interactive-HMI-commonly-used.png",
+        "tags": ["Job Matching", "AI", "Recommendation"],
+        "buttons": [
+            {"text": "GitHub", "link": "https://www.github.com/gnsepili/job-matching-system", "icon": "fa-brands fa-github"},
+            {"text": "Demo", "link": "https://www.example.com/demo", "icon": "fa-solid fa-play"}
+        ]
+    },
+    {
+        "title": "DetectGPT: AI-Generated Text Detection",
+        "description": "Developed a system to distinguish between AI-generated and human-written text using a zero-shot approach based on probability curvature. This system implements the methodology outlined in the 'DetectGPT' research paper.",
+        "image": "https://www.researchgate.net/profile/Gerasimos-Razis/publication/374208181/figure/fig1/AS:11431281194196091@1695991338753/The-training-pipeline-of-the-PaperMill-Document-Detector.ppm",
+        "tags": ["AI Detection", "Zero-shot", "Probability Curvature"],
+        "buttons": [
+            {"text": "GitHub", "link": "https://www.github.com/gnsepili/detectgpt", "icon": "fa-brands fa-github"},
+            {"text": "Demo", "link": "#", "icon": "fa-solid fa-play"}
         ]
     }
 ]
