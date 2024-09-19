@@ -19,35 +19,33 @@
     ],
     "Frameworks & Libraries": [
       {
-        "name": "scikit-learn",
-        "logo": "static/skills/sklearn.png"
+        "name": "LangChain",
+        "logo": "static/skills/langchain.png"
+      },
+      {
+        "name": "LlamIndex",
+        "logo": "static/skills/llamaindex.png"
+      },
+      {
+        "name": "Langgraph",
+        "logo": "static/skills/langgraph.png"
       },
       {
         "name": "PyTorch",
         "logo": "static/skills/pytorch.png"
       },
       {
-        "name": "LangChain",
-        "logo": "static/skills/langchain.png"
+        "name": "Huggingface",
+        "logo": "static/skills/hf.png"
       },
       {
         "name": "TensorFlow",
         "logo": "static/skills/tf.png"
       },
       {
-        "name": "NodeJS",
-        "logo": "static/skills/node.png"
+        "name": "scikit-learn",
+        "logo": "static/skills/sklearn.png"
       },
-      {
-        "name": "FastAPI",
-        "logo": "static/skills/fastapi.svg"
-      },
-      {
-        "name": "Apache Spark",
-        "logo": "static/skills/spark.png"
-      }
-    ],
-    "Tools & Technologies": [
       {
         "name": "Spacy",
         "logo": "static/skills/spacy.png"
@@ -57,8 +55,34 @@
         "logo": "static/skills/nltk.png"
       },
       {
+        "name": "FastAPI",
+        "logo": "static/skills/fastapi.svg"
+      },
+      {
+        "name": "NodeJS",
+        "logo": "static/skills/node.png"
+      }
+    ],
+    "Platforms & Technologies": [
+      {
         "name": "AWS",
         "logo": "static/skills/aws.webp"
+      },
+      {
+        "name": "Pinecone",
+        "logo": "static/skills/pinecone.png"
+      },
+      {
+        "name": "Langfuse",
+        "logo": "static/skills/langfuse.png"
+      },
+      {
+        "name": "Databricks",
+        "logo": "static/skills/databricks.png"
+      },
+      {
+        "name": "MlFlow",
+        "logo": "static/skills/mlflow.png"
       },
       {
         "name": "Git",
@@ -71,6 +95,10 @@
       {
         "name": "Docker",
         "logo": "static/skills/docker.webp"
+      },
+      {
+        "name": "ApacheSpark",
+        "logo": "static/skills/spark.png"
       }
     ]
   }

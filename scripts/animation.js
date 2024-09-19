@@ -5,7 +5,7 @@ document.querySelector('[data-collapse-toggle]').addEventListener('click', funct
     target.classList.toggle('hidden');
 });
 
-const roles = ["Data Scientist", "AI Engineer", "LLM Engineer", "NLP Engineer"];
+const roles = ["Data Scientist", "Gen AI Developer", "AI Researcher", "LLM Engineer", "NLP Engineer"];
 let roleIndex = 0;
 let charIndex = 0;
 const typingSpeed = 150;
@@ -13,9 +13,13 @@ const deletingSpeed = 50;
 const delayBetweenRoles = 2000;
 const roleElement = document.getElementById("role");
 
+const roleSpan = document.createElement('span');
+roleSpan.classList.add('text-blue-600', 'dark:text-blue-500');
+roleElement.appendChild(roleSpan);
+
 function typeRole() {
     if (charIndex < roles[roleIndex].length) {
-        roleElement.textContent += roles[roleIndex].charAt(charIndex);
+        roleSpan.textContent += roles[roleIndex].charAt(charIndex);
         charIndex++;
         setTimeout(typeRole, typingSpeed);
     } else {
@@ -25,7 +29,7 @@ function typeRole() {
 
 function deleteRole() {
     if (charIndex > 0) {
-        roleElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        roleSpan.textContent = roles[roleIndex].substring(0, charIndex - 1);
         charIndex--;
         setTimeout(deleteRole, deletingSpeed);
     } else {

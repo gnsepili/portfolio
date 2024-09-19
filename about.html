@@ -37,7 +37,7 @@
                     <a href="/about.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">About</a>
                 </li>
                 <li>
-                    <a href="/project.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
+                    <a href="/project.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
                 </li>
                 <li>
                     <a href="/blog.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogs</a>
@@ -53,7 +53,9 @@
 
 <!-- About Me Section -->
 <main class="flex-grow container mx-auto mt-24 p-6">
-    <section class="p-6">
+    <!-- <h1 class="text-3xl font-semibold mb-6 text-blue-500 text-center">About Me</h1> -->
+    
+    <section>
         <div class="flex flex-col md:flex-row items-center">
             <img class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-8" src="static/images/profile.jpg" alt="Ganesh Epili">
             <div>
@@ -64,13 +66,34 @@
                 <p class="text-gray-700 dark:text-gray-300">📞 Phone: <a href="tel:8984445951" class="text-blue-500">8984445951</a></p>
             </div>
         </div>
-        <div class="mt-8">
-            <h2 class="title text-2xl font-bold">About Me</h2>
-            <p class="text-gray-700 dark:text-gray-300 mb-4" style="font-weight: 300; font-size: 1.25rem;">Hello! I'm Ganesh Epili, a passionate data scientist and master's student specializing in natural language processing and machine learning. I love creating innovative solutions that bridge theoretical concepts with practical applications.</p>
-        </div>
     </section>
+    <div class="mt-8">
+        <p class="text-gray-700 dark:text-gray-300 mb-4" style="font-weight: 300; font-size: 1.25rem;">Hello! I'm Ganesh Epili, a passionate data scientist and master's student specializing in natural language processing and machine learning. I love creating innovative solutions that bridge theoretical concepts with practical applications.</p>
+    </div>
+    <h2 class="title text-2xl font-semibold">Work Experience</h2>
     <section class="glass-card">
-        <h2 class="title text-2xl font-bold">Work Experience</h2>
+        <div class="hover-effect mb-4 p-4 flex flex-col">
+            <div class="flex flex-col md:flex-row md:justify-between items-start mb-4">
+                <div class="flex items-center">
+                    <img class="w-8 h-8 mr-4" src="static/images/fynd.png" alt="Fynd">
+                    <div>
+                        <h3 class="text-xl font-semibold" style="color: #ffffff;">LLM Engineer</h3>
+                        <p class="company">Fynd (Shopsense Retail Technologies Limited)</p>
+                    </div>
+                </div>
+                <p class="right-align text-gray-500 italic text-sm">Jul 2024 - Present</p>
+            </div>
+            <p class="text-gray-300 mb-4">
+                Worked on the <a target="_blank" href="https://www.copilot.live/" class="text-blue-400 hover:text-blue-300 font-semibold">Copilot</a> product. It allows to quickly create a custom chatbot solution for websites, integrating diverse data sources including web scraping, CSV, API endpoints, Google Drive, and Git repositories etc. Key contributions:
+                <ul class="list-disc list-inside mt-2 text-gray-300">
+                    <li>Designed and implemented an automated data fetching and cleaning pipeline for efficient RAG (Retrieval-Augmented Generation) systems.</li>
+                    <li>Worked on efficiently implementing RAG at large scale with diverse data sources.</li>
+                    <li>Loging the user conversation traces and auto evaluate pipeline with langfuse</li>
+                    <li>Finetuned custom Speech (ASR & TTS) models for arabic language and deployed it with low latency enabling real-time speech-to-speech interaction.</li>
+                </ul>
+            </p>
+        </div>
+        
         <div class="hover-effect mb-4 p-4 flex flex-col">
             <div class="flex flex-col md:flex-row md:justify-between items-start mb-4">
                 <div class="flex items-center">
@@ -80,7 +103,7 @@
                         <p class="company">IRLP Lab, DAIICT</p>
                     </div>
                 </div>
-                <p class="right-align text-gray-700 dark:text-gray-300">May 2022 - Present</p>
+                <p class="right-align text-gray-500 italic text-sm">May 2022 - Jun 2024</p>
             </div>
             <p class="text-gray-700 dark:text-gray-300 mb-4">Conducted research on information retrieval systems and NLP, focusing on generative AI models like LLMs to enhance the understanding and processing of code-related queries. Contributed to the FIRE conference as a technical organizing member.</p>
         </div>
@@ -93,14 +116,14 @@
                         <p class="company">Jungleworks / Jugnoo</p>
                     </div>
                 </div>
-                <p class="right-align text-gray-700 dark:text-gray-300">July 2019 - February 2020</p>
+                <p class="right-align text-gray-500 italic text-sm">Jul 2019 - Feb 2020</p>
             </div>
             <p class="text-gray-700 dark:text-gray-300">Created a platform for building custom chatbots using fastify/Nodejs for the backend and RASA for the NLP server. Developed interactive dashboards for e-commerce websites and optimized the codebase to reduce graph loading time by 70%.</p>
         </div>
     </section>
     
+    <h2 class="title text-2xl font-bold">Education</h2>
     <section class="glass-card">
-        <h2 class="title text-2xl font-bold">Education</h2>
         <div class="hover-effect mb-4 p-4 flex flex-col md:flex-row md:justify-between">
             <div class="flex items-center">
                 <img class="w-8 h-8 mr-4" src="static/images/daiict.png" alt="DAIICT">
@@ -109,7 +132,7 @@
                     <p class="institution">Dhirubhai Ambani Institute of Information and Communication Technology</p>
                 </div>
             </div>
-            <p class="right-align text-gray-700 dark:text-gray-300">2022 - Present</p>
+            <p class="right-align text-gray-500 italic text-sm">Aug 2022 - Jun 2024</p>
         </div>
         <div class="hover-effect p-4 flex flex-col md:flex-row md:justify-between">
             <div class="flex items-center">
@@ -119,7 +142,7 @@
                     <p class="institution">Lovely Professional University</p>
                 </div>
             </div>
-            <p class="right-align text-gray-700 dark:text-gray-300">2016 - 2020</p>
+            <p class="right-align text-gray-500 italic text-sm">2016 - 2020</p>
         </div>
     </section>
     <section class="glass-card">
@@ -137,7 +160,7 @@
                     </p>                    
                 </div>
             </div>
-            <p class="right-align text-gray-700 dark:text-gray-300">2024</p>
+            <p class="right-align text-gray-500 italic text-sm">2024</p>
         </div>
         <div class="hover-effect mb-4 p-4 flex flex-col md:flex-row md:justify-between">
             <div class="flex items-center">
@@ -152,7 +175,7 @@
                     </p>                    
                 </div>
             </div>
-            <p class="right-align text-gray-700 dark:text-gray-300">2023</p>
+            <p class="right-align text-gray-500 italic text-sm">2023</p>
         </div>
         <div class="hover-effect mb-4 p-4 flex flex-col md:flex-row md:justify-between">
             <div class="flex items-center">
@@ -167,7 +190,7 @@
                     </p>                    
                 </div>
             </div>
-            <p class="right-align text-gray-700 dark:text-gray-300">2023</p>
+            <p class="right-align text-gray-500 italic text-sm">2023</p>
         </div>
         
     </section>

@@ -8,15 +8,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const card = document.createElement('div');
         card.classList.add('recommendation-card', 'flex-shrink-0', 'p-4', 'rounded-lg', 'shadow-md', 'dark:bg-gray-800', 'bg-white', 'w-80');
 
+        const linkedinIconLink = document.createElement('a');
+        // console.log("profile",rec.profile)
+        linkedinIconLink.href = rec.profile;
+        linkedinIconLink.target = "_blank";
+        linkedinIconLink.rel = "noopener noreferrer";
+
         const linkedinIcon = document.createElement('img');
         linkedinIcon.src = "static/images/linkedin.png";
         linkedinIcon.alt = "LinkedIn Icon";
-        linkedinIcon.classList.add('w-5', 'h-5', 'ml-2'); // Add ml-2 for margin-left
+        linkedinIcon.classList.add('w-5', 'h-5', 'ml-2');
+
+        linkedinIconLink.appendChild(linkedinIcon);
 
         const recommended = document.createElement('div');
         recommended.classList.add('mb-2', 'font-bold', 'text-gray-700', 'dark:text-gray-300', 'flex', 'items-center', 'justify-between');
         recommended.textContent = 'Recommended';
-        recommended.appendChild(linkedinIcon);
+        recommended.appendChild(linkedinIconLink);
 
         const message = document.createElement('p');
         message.classList.add('text-sm', 'mb-4', 'text-gray-900', 'dark:text-white');
